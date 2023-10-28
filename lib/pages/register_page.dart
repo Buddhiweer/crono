@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
 import '../components/my_buttton.dart';
 import '../components/my_textfield.dart';
 import '../components/square_tile.dart';
@@ -15,11 +14,10 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
+
   // text editing controllers
   final emailController = TextEditingController();
-
   final passwordController = TextEditingController();
-
   final confirmPasswordController = TextEditingController();
 
   // sign user up method
@@ -84,14 +82,14 @@ class _RegisterPageState extends State<RegisterPage> {
                 // SizedBox(height: 50),
 
                 // logo
-                Icon(Icons.supervised_user_circle,size: 100,),
+                const Icon(Icons.supervised_user_circle,size: 100,),
                 // Image.asset(
                 //   'assets/images/img_2.png',
                 //   height: 100,
                 // ),
 
                 // welcome back, You've been missed!
-                Text(
+                const Text(
                   'Let\'s create an account for you!',
                   style: TextStyle(
                     color: Colors.grey,
@@ -174,7 +172,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
 
@@ -187,16 +185,6 @@ class _RegisterPageState extends State<RegisterPage> {
                       onTap: () => AuthService().signInWithGoogle(context),
                       imagePath: 'assets/images/google.png',
                     ),
-
-                    // const SizedBox(
-                    //   width: 40,
-                    // ),
-
-                    //facebook button
-                    // SquareTile(
-                    //   onTap: () {},
-                    //   imagePath: 'assets/icons/facebook.png',
-                    // ),
                   ],
                 ),
                 const SizedBox(
@@ -207,16 +195,16 @@ class _RegisterPageState extends State<RegisterPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Already have an account?'),
+                    const Text('Already have an account?'),
                     const SizedBox(
                       width: 10,
                     ),
                     GestureDetector(
                       onTap: widget.onTap,
-                      child: Text(
+                      child: const Text(
                         'Login',
                         style: TextStyle(
-                          color: Colors.orange,
+                          color: Colors.blueAccent,
                           fontWeight: FontWeight.bold,
                         ),
                       ),

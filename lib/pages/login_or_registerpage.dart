@@ -1,6 +1,5 @@
 import 'package:crono/pages/register_page.dart';
 import 'package:flutter/material.dart';
-
 import 'login_page.dart';
 
 class LoginOrRegisterPage extends StatefulWidget {
@@ -9,6 +8,7 @@ class LoginOrRegisterPage extends StatefulWidget {
   @override
   State<LoginOrRegisterPage> createState() => _LoginOrRegisterPageState();
 }
+
 
 class _LoginOrRegisterPageState extends State<LoginOrRegisterPage> {
   // initially  show login page

@@ -1,9 +1,7 @@
-import 'package:crono/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
-
 import '../drawer/drawer_screen.dart';
-import 'account_page.dart';
+import 'form_screen.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -35,23 +33,9 @@ class _MainPageState extends State<MainPage> {
   Widget currentScreen() {
     switch (currentIndex) {
       case 0:
-        return HomePage();
-      case 1:
-        return MyAccount();
-      case 2:
-        return Container(
-          color: Colors.purple,
-        );
-      case 3:
-        return Container(
-          color: Colors.pink,
-        );
-      case 4:
-        return Container(
-          color: Colors.green,
-        );
+        return FormScreen();
       default:
-        return HomePage();
+        return FormScreen();
     }
   }
 }

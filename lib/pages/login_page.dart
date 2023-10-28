@@ -1,7 +1,6 @@
 import 'package:crono/services/auth_services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
 import '../components/my_buttton.dart';
 import '../components/my_textfield.dart';
 import '../components/square_tile.dart';
@@ -76,15 +75,15 @@ class _LoginPageState extends State<LoginPage> {
                 // SizedBox(height: 50),
 
                 // logo
-                Icon(Icons.lock,size: 100,),
+                const Icon(Icons.lock,size: 100,),
                 // Image.asset(
                 //   'assets/images/img_2.png',
                 //   height: 100,
                 // ),
 
                 // welcome back, You've been missed!
-                Text(
-                  'Welcome Pet care!',
+                const Text(
+                  'Welcome to Chrono',
                   style: TextStyle(
                     color: Colors.grey,
                     fontSize: 16,
@@ -116,23 +115,16 @@ class _LoginPageState extends State<LoginPage> {
                 ),
 
                 // forgot password?
-                Padding(
+                const Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
-                    // children: [
-                    //   Text(
-                    //     'Forgot Password?',
-                    //     style: TextStyle(color: Colors.blue),
-                    //   ),
-                    // ],
                   ),
                 ),
 
                 const SizedBox(
                   height: 25,
                 ),
-
                 // sign in button
 
                 MyButton(
@@ -182,22 +174,11 @@ class _LoginPageState extends State<LoginPage> {
                       onTap: () => AuthService().signInWithGoogle(context),
                       imagePath: 'assets/images/google.png',
                     ),
-
-                    // SizedBox(
-                    //   width: 40,
-                    // ),
-
-                    //facebook button
-                    // SquareTile(
-                    //   onTap: () {},
-                    //   imagePath: 'assets/icons/facebook.png',
-                    // ),
                   ],
                 ),
                 const SizedBox(
                   height: 20,
                 ),
-
                 //not a member? register now
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -211,7 +192,7 @@ class _LoginPageState extends State<LoginPage> {
                       child: Text(
                         'Register',
                         style: TextStyle(
-                          color: Colors.orange,
+                          color: Colors.blueAccent,
                           fontWeight: FontWeight.bold,
                         ),
                       ),

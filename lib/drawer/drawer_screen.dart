@@ -78,29 +78,12 @@ class _DrawerScreenState extends State<DrawerScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               drawerList(Icons.home, 'Home', 0),
-              drawerList(Icons.person, 'Profile', 1),
-              drawerList(Icons.local_hospital, 'Doctors', 2),
-              drawerList(Icons.night_shelter, 'Shelters', 3),
-              drawerList(Icons.place, 'Map', 4),
               SizedBox(
                 height: 100,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // IconButton(
-                  //   onPressed: () {
-                  //     if (user.providerData[0].providerId == 'google.com') {
-                  //       signOutGoogle();
-                  //     } else {
-                  //       signOutPassword();
-                  //     }
-                  //   },
-                  //   icon: const Icon(
-                  //     Icons.logout,
-                  //   ),
-                  // ),
-                  // Text('LogOut'),
                   AnimatedButton(
                     width: 100,
                     pressEvent: () {
